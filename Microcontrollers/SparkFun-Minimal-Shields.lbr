@@ -3429,6 +3429,8 @@ AudioAmp</text>
 <pad name="GND@3" x="1.27" y="-39.37" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="5V@1" x="-1.27" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="5V@2" x="1.27" y="3.81" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="22" x="-1.27" y="-21.59" drill="1.016" diameter="1.8796" shape="octagon" rot="R90"/>
+<pad name="23" x="1.27" y="-21.59" drill="1.016" diameter="1.8796" shape="octagon" rot="R90"/>
 </package>
 <package name="2X20-SHROUDED">
 <wire x1="-2.775" y1="24.765" x2="-2.775" y2="23.495" width="0.2032" layer="21"/>
@@ -7009,6 +7011,8 @@ Footprint designed for Sullins SBH11-NBPC-D20-SM-BK</description>
 <pin name="20(SDA)" x="20.32" y="33.02" length="middle" rot="R180"/>
 <pin name="19(RX1)" x="20.32" y="35.56" length="middle" rot="R180"/>
 <pin name="0(RX0)" x="-20.32" y="-7.62" length="middle"/>
+<pin name="41" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="40" x="20.32" y="-17.78" length="middle" rot="R180"/>
 </symbol>
 <symbol name="ARDUINO_MINI">
 <wire x1="-7.62" y1="15.24" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
@@ -8214,6 +8218,8 @@ Breakout</text>
 <connect gate="G$1" pin="21(SCL)" pad="21"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="40" pad="22"/>
+<connect gate="G$1" pin="41" pad="23"/>
 <connect gate="G$1" pin="42" pad="42"/>
 <connect gate="G$1" pin="43" pad="43"/>
 <connect gate="G$1" pin="44" pad="44"/>
