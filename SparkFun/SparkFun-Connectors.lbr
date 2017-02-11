@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19915,6 +19915,19 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <wire x1="-3.175" y1="-1.715" x2="3.175" y2="-1.715" width="0.127" layer="51"/>
 <wire x1="3.175" y1="-1.715" x2="3.175" y2="1.715" width="0.127" layer="51"/>
 </package>
+<package name="RCA_MINIMAL">
+<wire x1="-4" y1="5" x2="-4" y2="-5" width="0.2032" layer="51"/>
+<wire x1="-4" y1="-5" x2="5.8" y2="-5" width="0.2032" layer="51"/>
+<wire x1="5.8" y1="-5" x2="5.8" y2="5" width="0.2032" layer="51"/>
+<wire x1="5.8" y1="5" x2="-4" y2="5" width="0.2032" layer="51"/>
+<wire x1="-2" y1="5" x2="2" y2="5" width="0.2032" layer="21"/>
+<wire x1="5.8" y1="5" x2="5.8" y2="-5" width="0.2032" layer="21"/>
+<wire x1="-2" y1="-5" x2="2" y2="-5" width="0.2032" layer="21"/>
+<wire x1="-4" y1="3" x2="-4" y2="-3" width="0.2032" layer="21"/>
+<pad name="SHELL" x="0" y="0" drill="2.3"/>
+<pad name="PIN" x="3.7" y="3.7" drill="2.3"/>
+<pad name="SWITCH" x="3.7" y="-3.7" drill="2.3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -29816,6 +29829,16 @@ NOTE: CD1 and CD2 are connected internally</description>
 </technologies>
 </device>
 <device name="-LOCK" package="RCA_LOCK">
+<connects>
+<connect gate="G$1" pin="PIN" pad="PIN"/>
+<connect gate="G$1" pin="SHELL" pad="SHELL"/>
+<connect gate="G$1" pin="SWITCH" pad="SWITCH"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RCA_MINIMAL" package="RCA_MINIMAL">
 <connects>
 <connect gate="G$1" pin="PIN" pad="PIN"/>
 <connect gate="G$1" pin="SHELL" pad="SHELL"/>
